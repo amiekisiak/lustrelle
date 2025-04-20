@@ -1,5 +1,64 @@
-body {
+
+
+
+.body{
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
+    height: 100%;
   }
+
+  .nav {
+    background-color: #19d285; /* Material blue */
+  }
+
+  .nav-wrapper a.brand-logo {
+    font-size: 1.8rem;
+    padding-left: 15px;
+    
+  }
+
+  ul.dropdown-content li a {
+    color: #1976d2 ;
+  }
+
+  /* Hero Section Styling */
+  .hero-image {
+    background-image: url('./pictures/j-shop5.png'); /* Example background */
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  .hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-text button {
+    background-color: #1976d2;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s;
+  }
+
+  .hero-text button:hover {
+    background-color: #1565c0;
+  }
+
+    
