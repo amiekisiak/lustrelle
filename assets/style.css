@@ -9,7 +9,8 @@
   }
 
   nav {
-    background-color: #084503 !important; /* beautiful deep purple */
+    background-color: rgba(1, 2, 1, 0.3)!important; /* beautiful deep purple */
+
   }
 
   .nav-wrapper a.brand-logo {
@@ -20,6 +21,11 @@
 
   ul.dropdown-content li a {
     color: #1976d2 ;
+  }
+
+  .brand-logo img {
+    padding-top: 2px;
+    padding-bottom: 30px;
   }
 
   /* Hero Section Styling */
@@ -58,7 +64,7 @@
   
   .hero-text p {
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   
   .hero-text button {
@@ -74,4 +80,10 @@
   
   .hero-text button:hover {
     background-color: #1565c0;
+  }
+  .hero-text h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 3.5rem; /* You can adjust size */
+    letter-spacing: 1px; /* Spacing between letters for luxury feel */
+    text-transform: uppercase; /* Optional: makes it look even more high-end */
   }
