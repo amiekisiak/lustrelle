@@ -8,8 +8,8 @@
     height: 100%;
   }
 
-  .nav {
-    background-color: #19d285; /* Material blue */
+  nav {
+    background-color: #084503 !important; /* beautiful deep purple */
   }
 
   .nav-wrapper a.brand-logo {
@@ -23,29 +23,44 @@
   }
 
   /* Hero Section Styling */
-  .hero-image {
-    background-image: url('./pictures/j-shop5.png'); /* Example background */
-    background-size: cover;
-    background-position: center;
-    height: 90vh;
+  .hero-video {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    overflow: hidden;
   }
-
+  
+  .hero-video video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Important: makes it behave like a background image */
+    z-index: 0;
+  }
+  
+  .hero-text {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
   .hero-text h1 {
     font-size: 3rem;
-    margin-bottom: 10px;
   }
-
+  
   .hero-text p {
     font-size: 1.5rem;
     margin-bottom: 20px;
   }
-
+  
   .hero-text button {
     background-color: #1976d2;
     border: none;
@@ -56,9 +71,7 @@
     color: white;
     transition: background-color 0.3s;
   }
-
+  
   .hero-text button:hover {
     background-color: #1565c0;
   }
-
-    
