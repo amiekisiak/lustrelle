@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 </head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Materialize Navbar Example</title>
+
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+
 <body>
-       <nav>
+
+    <nav>
         <div class="nav-wrapper">
             <a href="#!" class="brand-logo">
                 <img src="./assets/pictures/l-logo4.png" alt="Lustrelle Logo" style="height: 300px">
             </a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="shop.html">Sass</a></li>
+                <li><a href="shop.html">Shop</a></li>
                 <li><a href="badges.html">Components</a></li>
                 <li>
                     <a class="dropdown-trigger" href="#!" data-target="dropdown1">
@@ -22,5 +43,61 @@
             </ul>
         </div>
     </nav>
+
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">Shop</a></li>
+        <li><a href="#!">Two</a></li>
+        <li class="divider"></li>
+        <li><a href="#!">Three</a></li>
+    </ul>
+
+ </div>
+ <h1>Our Collection</h1>
+
+  <div class="shop-container">
+    <!-- Product 1 -->
+    <div class="product-card" onclick="openModal('assets/product1.jpg')">
+      <img src="assets/product1.jpg" alt="Elegant Watch"/>
+      <div class="product-info">
+        <h2>Elegant Watch</h2>
+        <p>Timeless design with stainless steel case and leather strap.</p>
+        <div class="price">£199</div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card" onclick="openModal('assets/product2.jpg')">
+      <img src="assets/product2.jpg" alt="Leather Handbag"/>
+      <div class="product-info">
+        <h2>Leather Handbag</h2>
+        <p>Genuine Italian leather. Ideal for everyday elegance.</p>
+        <div class="price">£149</div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card" onclick="openModal('assets/product3.jpg')">
+      <img src="assets/product3.jpg" alt="Sunglasses"/>
+      <div class="product-info">
+        <h2>Designer Sunglasses</h2>
+        <p>UV-protection lenses with stylish gold-tone frames.</p>
+        <div class="price">£89</div>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg">
+  </div>
+
+ <script src='./assets/script.js'></script>
+
+
 </body>
+
 </html>
