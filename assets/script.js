@@ -13,3 +13,18 @@ document.addEventListener('DOMContentLoaded', function() {
     function closeModal() {
       document.getElementById("imageModal").style.display = "none";
     }
+
+     const img = document.getElementById("zoom-img");
+
+  img.addEventListener("mousemove", function(e) {
+    const { left, top, width, height } = img.getBoundingClientRect();
+    const x = ((e.pageX - left) / width) * 100;
+    const y = ((e.pageY - top) / height) * 100;
+    img.style.transformOrigin = `${x}% ${y}%`;
+    img.style.transform = "scale(2)";
+  });
+
+  img.addEventListener("mouseleave", function() {
+    img.style.transform = "scale(1)";
+    img.style.transformOrigin = "center center";
+  });
